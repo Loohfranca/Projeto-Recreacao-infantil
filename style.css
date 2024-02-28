@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+.navbar{
+    background-color: white;
+    height: 80px;
+}
+
+.login-button{
+    background-color: rgb(233, 99, 9);
+    font-size:18px ;
+    color: rgb(255, 255, 255);
+    border-radius: 30px ;
+    padding: 8px 20px ;
+    text-decoration: none;
+    transition: 0.2s background-color;
+    font-weight: 600;
+   
+}
+.login-button:hover{
+    background-color: rgb(250, 121, 35);
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(3, 3, 3);
+
+}
+.btn-close{
+   color: #c79a39;
+    
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+
+}
+
+.nav-link{
+    color: rgb(26, 24, 24);
+    font-size: 23px;
+    font-weight: 600;
+    position: relative;
+    
+    
+}
+.nav-link:hover, .nav-link :active{
+
+    color: #157ad8;
+}
+
+@media (min-width: 991px){
+
+.nav-link::before{
+content:"" ;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%);
+width: 30%;
+height: 2px;
+background-color: #2d78e9 ;
+visibility: hidden;
+transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before{
+width: 100%;
+visibility: visible;
+}
+
+.hero-section{
+    background: url(assets/Design\ sem\ nome.png) center ; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+   
+}
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.1);
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.hero-section h1 {
+    font-size: 1.5em;
+}
+.hero-section h2 {
+    font-size: 1.2em;
+}
+}
