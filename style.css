@@ -7,7 +7,7 @@
 
 
 .navbar{
-   background: rgb(178, 252, 236);
+    background-image: linear-gradient(180deg, #deffda 0, #ccffdc 12.5%, #bbffdc 25%, #abffda 37.5%, #9df2d5 50%, #91e2cf 62.5%, #89d4c9 75%, #82c8c3 87.5%, #7ebebe 100%);
     height:120px;
     margin: 20px;
     border-radius: 70px;
@@ -44,7 +44,7 @@
 }
 
 .nav-link{
-    color: rgb(26, 24, 24);
+    color: rgb(10, 9, 9);
     font-size: 23px;
     font-weight: 700;
     position: relative;
@@ -53,7 +53,7 @@
 }
 .nav-link:hover, .nav-link :active{
 
-    color: #e77b00;
+    color: #666565;
 }
 
 @media (min-width: 50px){
